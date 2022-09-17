@@ -1,0 +1,87 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30%;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #controlpanel{
+    border: 1px solid black;
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: 75%;
+    text-align: center;
+  }
+  #controlpanel input{
+    width: 5rem;
+  }
+  #flip{
+    display: none;
+  }
+  #gameboard{
+    min-height: 15rem;
+    border: 1px solid black;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #gameboard > div{
+    line-height: .8;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 500%;
+  }
+  #main{
+    padding-top: 10%;
+    border: 1px solid red;
+    width: auto;
+    height: 100%;
+  }
+  #scoreboard{
+    border: 1px solid black;
+    transition: .3s;
+    width: 2rem;
+    position: absolute;
+    top: 25%;
+    right: -2rem;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  #scoreboard:hover{
+    width: 10rem;
+    right: -10rem;
+  }
+  #title{
+    font-size: 300%;
+    font-weight: 900;
+    text-align: center;
+  }
+  #instructions{
+    color: red;
+  }
+  label{
+    display: none;
+  }
