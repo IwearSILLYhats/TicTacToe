@@ -24,7 +24,7 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-  #controlpanel{
+  #controlPanel{
     border: 1px solid black;
     margin-top: .5rem;
     display: grid;
@@ -34,13 +34,10 @@
     font-size: 75%;
     text-align: center;
   }
-  #controlpanel input{
+  #controlPanel input{
     width: 5rem;
   }
-  #flip{
-    display: none;
-  }
-  #gameboard{
+  #gameBoard{
     min-height: 15rem;
     border: 1px solid black;
     position: relative;
@@ -48,7 +45,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-  #gameboard > div{
+  #gameBoard > div{
     line-height: .8;
     border: 1px solid black;
     text-align: center;
@@ -60,7 +57,7 @@
     width: auto;
     height: 100%;
   }
-  #scoreboard{
+  #scoreBoard{
     border: 1px solid black;
     transition: .3s;
     width: 2rem;
@@ -70,7 +67,7 @@
     overflow-x: hidden;
     white-space: nowrap;
   }
-  #scoreboard:hover{
+  #scoreBoard:hover{
     width: 10rem;
     right: -10rem;
   }

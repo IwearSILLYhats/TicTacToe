@@ -11,8 +11,8 @@
 <body>
     <div id="main">
         <div id="title">Tic Tac Toe</div>
-        <div id="gameboard">
-            <span id="scoreboard">Score Board</span>
+        <div id="gameBoard">
+            <span id="scoreBoard">Score Board</span>
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -23,22 +23,22 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div id="controlpanel">
+        <div id="controlPanel">
             <div>
                 <p id="p1Name"></p>
                 <label for="player1">Player 1</label>
-                <input type="text" name="player1" id="player1Input" placeholder="Player 1" required>
+                <input type="text" name="player1" id="player1Input" placeholder="Player 1" maxlength="8" required>
             </div>
             <div>
 
                 <p id="instructions">Please enter a name for each player</p>
                 <button id="submit">Submit Names</button>
-                <button id="flip">Flip the Table</button>
+                <button id="flip" style="display: none;">Flip the Table</button>
             </div>
             <div>
                 <p id="p2Name"></p>
                 <label for="player2">Player 2</label>
-                <input type="text" name="player2" id="player2Input" placeholder="Player 2" required>
+                <input type="text" name="player2" id="player2Input" placeholder="Player 2" maxlength="8" required>
             </div>
         </div>
     </div>
