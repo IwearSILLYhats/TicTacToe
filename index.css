@@ -35,6 +35,8 @@
     text-align: center;
   }
   #controlPanel input{
+    border: 1px solid grey;
+    border-radius: 5px;
     width: 5rem;
   }
   #gameBoard{
@@ -81,4 +83,7 @@
   }
   label{
     display: none;
+  }
+  .error{
+    border-color: red !important;
   }
